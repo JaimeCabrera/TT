@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.GuideFragment">
-<include layout="@layout/actionbar_toolbar"></include>
+
+    <include layout="@layout/actionbar_toolbar"></include>
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="@dimen/paddin_bottom_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/paddin_bottom_container"
+        android:orientation="vertical">
 
+        <ListView
+            android:id="@+id/lvLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
-</FrameLayout>
+</android.support.constraint.ConstraintLayout>

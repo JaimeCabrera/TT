@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="paddin_bottom_container">55dp</dimen>
+    <dimen name="paddin_bottom_container">45dp</dimen>
     <dimen name="activity_horizontal_margin">10dp</dimen>
     <dimen name="activity_vertical_margin">10dp</dimen>
-    <dimen name="buttonOpenCamera_margin">10dp</dimen>
+    <dimen name="buttonOpenCamera_margin">25dp</dimen>
 </resources>

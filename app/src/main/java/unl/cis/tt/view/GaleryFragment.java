@@ -27,7 +27,8 @@ public class GaleryFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_galery, container, false);
-        showToolbar("Galeria",false,view);
+        ///trayendo un string desde resourses
+        showToolbar(getResources().getString(R.string.textToolbarGalery),false,view);
         return view;
 
     }

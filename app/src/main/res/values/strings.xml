@@ -7,4 +7,6 @@
     <string name="bottombar_title_galery">Galery</string>
     <string name="bottombar_title_guia">Guía</string>
     <string name="textToolbarGalery">Galería de Imagenes</string>
+    <string name="usernameCard">Tizon Tardio</string>
+    <string name="firstword_card">El tizon tardio ...</string>
 </resources>

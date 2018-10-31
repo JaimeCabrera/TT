@@ -20,13 +20,12 @@ public class Adaptador extends BaseAdapter {
     String[][] datos;
     int[] datosImg;
 
-    public Adaptador(Context conexto, String[][] datos, int[] imagenes)
-    {
+    public Adaptador(Context conexto, String[][] datos, int[] imagenes) {
         this.contexto = conexto;
         this.datos = datos;
         this.datosImg = imagenes;
 
-        inflater = (LayoutInflater)conexto.getSystemService(conexto.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater) conexto.getSystemService(conexto.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -47,14 +46,13 @@ public class Adaptador extends BaseAdapter {
         imagen.setImageResource(datosImg[i]);
 
 
-
         imagen.setTag(i);
 
         imagen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent visorImagen = new Intent(contexto, VirsorPlagaActivity.class);
-                visorImagen.putExtra("IMG", datosImg[(Integer)v.getTag()]);
+                visorImagen.putExtra("IMG", datosImg[(Integer) v.getTag()]);
                 contexto.startActivity(visorImagen);
             }
         });

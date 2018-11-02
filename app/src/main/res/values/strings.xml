@@ -7,4 +7,9 @@
     <string name="bottombar_title_galery">Galery</string>
     <string name="bottombar_title_guia">Guía</string>
     <string name="textToolbarGalery">Galería de Imagenes</string>
+    <string name="usernameCard">Plaga de tipo Omniceto</string>
+    <string name="firstword_card">El tizon tardio ...</string>
+    <string name="titleImage_detail">\"Tizon Tardio\"</string>
+    <string name="lore">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="control_plaga">Fomar de controlarla</string>
 </resources>

@@ -20,7 +20,7 @@
 
     <!--nuevos  temas para el toolbar  -->
     <style name="ActionBarThemeOverlay" parent="">
-        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:textColorPrimary">@color/colorSecondaryText</item>
         <!--Color para el boton <- de upbutton -->
         <item name="colorControlNormal">@color/colorAccent</item>
         <item name="colorControlHighlight">@color/color_controlHighlight</item>

@@ -4,4 +4,13 @@
     <dimen name="activity_horizontal_margin">10dp</dimen>
     <dimen name="activity_vertical_margin">10dp</dimen>
     <dimen name="buttonOpenCamera_margin">25dp</dimen>
+    <dimen name="cardview_heigth">200dp</dimen>
+    <dimen name="cornerRadiusCarview">4dp</dimen>
+    <dimen name="textSizeUsernameCard">25sp</dimen>
+    <dimen name="fisrtWord_card_text">15sp</dimen>
+    <dimen name="margin_right">2dp</dimen>
+    <dimen name="margin_top_cardview">50dp</dimen>
+    <dimen name="margin_bottom_cardview">16dp</dimen>
+    <dimen name="appbar_layout_height">256dp</dimen>
+    <dimen name="hieght_dividir">1dp</dimen>
 </resources>

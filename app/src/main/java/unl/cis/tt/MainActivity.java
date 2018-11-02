@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navigation_home:
                         HomeFragment homeFragment = new HomeFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment)
-                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).commit();
+                                .setTransition(FragmentTransaction.TRANSIT_EXIT_MASK).addToBackStack(null).commit();
                         break;
                     case R.id.navigation_capturas:
                         GaleryFragment galeryFragment = new GaleryFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, galeryFragment)
-                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).commit();
+                                .setTransition(FragmentTransaction.TRANSIT_ENTER_MASK).addToBackStack(null).commit();
                         break;
                     case R.id.navigation_guia:
                         GuideFragment guideFragment = new GuideFragment();

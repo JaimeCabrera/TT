@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/picture"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cardview_heigth"
+    android:layout_marginBottom="@dimen/margin_bottom_cardview"
+    cardview:cardCornerRadius="@dimen/cornerRadiusCarview">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pictureCard"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_imageview"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:background="#53292920"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/usernameCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usernameCard"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textSizeUsernameCard" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/firstWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/firstword_card"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/fisrtWord_card_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>

@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import unl.cis.tt.R;
 
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -28,15 +29,17 @@ public class GaleryFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_galery, container, false);
         ///trayendo un string desde resourses
-        showToolbar(getResources().getString(R.string.textToolbarGalery),false,view);
+        showToolbar(getResources().getString(R.string.textToolbarGalery), false, view);
         return view;
 
     }
-    public void showToolbar(String tittle, Boolean upButton, View view){
+
+
+    public void showToolbar(String tittle, Boolean upButton, View view) {
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(tittle);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(tittle);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
     }
 
 }

@@ -4,7 +4,6 @@
     android:id="@+id/picture"
     android:layout_width="match_parent"
     android:layout_height="@dimen/cardview_heigth"
-    android:elevation="@dimen/margin_right"
     android:layout_marginBottom="@dimen/margin_bottom_cardview"
     cardview:cardCornerRadius="@dimen/cornerRadiusCarview">
 
@@ -14,7 +13,7 @@
 
         <ImageView
             android:id="@+id/pictureCard"
-            android:padding="50dp"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_imageview"

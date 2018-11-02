@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navigation_guia:
                         GuideFragment guideFragment = new GuideFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, guideFragment)
-                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).addToBackStack(null).commit();
+                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).commit();
                         break;
                 }
                 return true;

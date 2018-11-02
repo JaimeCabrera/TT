@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.GuideFragment">
+    tools:context=".view.GaleryFragment">
 
     <include layout="@layout/actionbar_toolbar"></include>
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:orientation="vertical">
+        android:layout_marginLeft="@dimen/margin_right"
+        android:layout_marginRight="@dimen/margin_right"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_right"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <ListView
-            android:id="@+id/lvLista"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pictureRecycled"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@color/colorPrimary"
-            android:elevation="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="match_parent" />
+
+
+        <include layout="@layout/cardview_picture"></include>
+
     </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

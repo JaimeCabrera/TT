@@ -11,4 +11,6 @@
     <dimen name="margin_right">2dp</dimen>
     <dimen name="margin_top_cardview">50dp</dimen>
     <dimen name="margin_bottom_cardview">16dp</dimen>
+    <dimen name="appbar_layout_height">256dp</dimen>
+    <dimen name="hieght_dividir">1dp</dimen>
 </resources>

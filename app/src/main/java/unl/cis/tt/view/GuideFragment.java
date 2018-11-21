@@ -36,7 +36,6 @@ public class GuideFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_guide, container, false);
         showToolbar("Guia de plagas", false, view);
-
         RecyclerView picturesRecicler = (RecyclerView) view.findViewById(R.id.pictureRecycled);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);

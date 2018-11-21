@@ -5,20 +5,5 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <include layout="@layout/actionbar_toolbar"></include>
 
-    <EditText
-        android:id="@+id/editTextNombre"
-        android:hint="Nombre"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:hint="Email"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <Button
-        android:id="@+id/btnGuardar"
-        android:layout_width="wrap_content"
-        android:text="Guardar"
-        android:layout_height="match_parent" />
 
 </LinearLayout>

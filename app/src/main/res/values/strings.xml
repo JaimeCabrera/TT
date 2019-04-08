@@ -3,10 +3,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="bottombar_title_home">Home</string>
-    <string name="bottombar_title_galery">Galery</string>
-    <string name="bottombar_title_guia">Guía</string>
-    <string name="textToolbarGalery">Galería de Imagenes</string>
+    <string name="bottombar_title_home">Escanear</string>
+    <string name="bottombar_title_galery">Guia de plagas</string>
+    <string name="bottombar_title_guia">Ayuda</string>
+    <string name="textToolbarGalery">Información</string>
     <string name="usernameCard">Plaga de tipo Omniceto</string>
     <string name="firstword_card">El tizon tardio ...</string>
     <string name="titleImage_detail">\"Tizon Tardio\"</string>

@@ -15,10 +15,10 @@ import unl.cis.tt.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class GaleryFragment extends Fragment {
+public class infoFragment extends Fragment {
 
 
-    public GaleryFragment() {
+    public infoFragment() {
         // Required empty public constructor
     }
 

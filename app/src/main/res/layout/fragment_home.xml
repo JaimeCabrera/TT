@@ -24,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        android:onClick="op"
         android:layout_margin="@dimen/buttonOpenCamera_margin"
         app:backgroundTint="@color/colorAccent"
         app:srcCompat="@drawable/ic_camera"/>

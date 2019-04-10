@@ -10,8 +10,9 @@
         android:background="@color/background_color"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/paddin_bottom_container">
+        android:layout_marginBottom="@dimen/paddin_bottom_container">i
     </FrameLayout>
+
     <include layout="@layout/bottombar_navigation"></include>
 
 </android.support.constraint.ConstraintLayout>

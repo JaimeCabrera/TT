@@ -20,6 +20,7 @@ import android.support.v7.widget.Toolbar;
 
 import unl.cis.tt.MainActivity;
 import unl.cis.tt.R;
+import unl.cis.tt.clasificationImages.CameraActivity;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
@@ -27,7 +28,7 @@ import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment implements View.OnClickListener {
+public class HomeFragment extends Fragment  {
     private static final int PERMISSION_REQUEST_CODE = 200;
     private View view;
 
@@ -44,8 +45,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         showToolbar("Home", false, view);
 
-        FloatingActionButton check_permission = (FloatingActionButton) view.findViewById(R.id.buttonOpenCamera);
-        check_permission.setOnClickListener((View.OnClickListener) this);
+       FloatingActionButton btn_camera = (FloatingActionButton) view.findViewById(R.id.buttonOpenCamera);
+        btn_camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openClasificator();
+            }
+        });
         return view;
 
     }
@@ -57,7 +63,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
     }
 
-    //tomar funcion que abre la camara fotos
+    public void openClasificator(){
+        Intent intent = new Intent(getContext(),CameraActivity.class);
+        startActivity(intent);
+    }
+    /*//tomar funcion que abre la camara fotos
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
     private void dispatchTakePictureIntent() {
@@ -78,11 +88,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.buttonOpenCamera: {
                 if (checkPermission()) {
                     //si el permiso es valido la app abre la camara
-                    /*Toast.makeText(getApplicationContext(), "Ahora si puedes tomar la foto", Toast.LENGTH_SHORT).show();*/
+                    *//*Toast.makeText(getApplicationContext(), "Ahora si puedes tomar la foto", Toast.LENGTH_SHORT).show();*//*
                     dispatchTakePictureIntent();
 
                 } else {
-                    /*Toast.makeText(getApplicationContext(), "Por favor Concede los permisos", Toast.LENGTH_SHORT).show();*/
+                    *//*Toast.makeText(getApplicationContext(), "Por favor Concede los permisos", Toast.LENGTH_SHORT).show();*//*
                     requestPermission();
                 }
             }
@@ -114,11 +124,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         switch (requestCode) {
             case PERMISSION_REQUEST_CODE:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    /* Toast.makeText(getApplicationContext(), "Permission Granted", Toast.LENGTH_SHORT).show();*/
+                    *//* Toast.makeText(getApplicationContext(), "Permission Granted", Toast.LENGTH_SHORT).show();*//*
 
                     // main logic
                 } else {
-                    /*Toast.makeText(getApplicationContext(), "Por favor Concede los permisos", Toast.LENGTH_SHORT).show();*/
+                    *//*Toast.makeText(getApplicationContext(), "Por favor Concede los permisos", Toast.LENGTH_SHORT).show();*//*
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
                             showMessageOKCancel("Por favor Concede los siguientes permisos: Camara, Localizacion y Almacenamiento para acceder a todas las funcionalidades de PlagScanner",
@@ -146,5 +156,5 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 .show();
 
     }
-
+*/
 }

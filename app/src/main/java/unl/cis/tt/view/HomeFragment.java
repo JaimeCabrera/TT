@@ -2,6 +2,7 @@ package unl.cis.tt.view;
 
 
 import android.Manifest;
+import android.animation.Animator;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -17,6 +18,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v7.widget.Toolbar;
+import android.view.animation.AnimationUtils;
+import android.view.animation.Interpolator;
 
 import unl.cis.tt.MainActivity;
 import unl.cis.tt.R;
@@ -45,7 +48,8 @@ public class HomeFragment extends Fragment  {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         showToolbar("Home", false, view);
 
-       FloatingActionButton btn_camera = (FloatingActionButton) view.findViewById(R.id.buttonOpenCamera);
+       final FloatingActionButton btn_camera = (FloatingActionButton) view.findViewById(R.id.buttonOpenCamera);
+        
         btn_camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

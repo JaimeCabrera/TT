@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //crear un obejeto de bottomNa.. para cambiar entre los fragments
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
         bottomNavigationView.setSelectedItemId(R.id.navigation_home);
@@ -31,17 +32,17 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.navigation_home:
                         HomeFragment homeFragment = new HomeFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment)
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container1, homeFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).addToBackStack(null).commit();
                         break;
                     case R.id.navigation_capturas:
                         GuideFragment guideFragment = new GuideFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, guideFragment)
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container1, guideFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).addToBackStack(null).commit();
                         break;
                     case R.id.navigation_guia:
                         infoFragment galeryFragment = new infoFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, galeryFragment)
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container1, galeryFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).addToBackStack(null).commit();
                         break;
                 }
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         // set default fragment with tab not selected
         HomeFragment homeFragment = new HomeFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, homeFragment);
+        transaction.replace(R.id.container1, homeFragment);
         transaction.commit();
 
     }

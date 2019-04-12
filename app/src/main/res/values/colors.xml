@@ -9,4 +9,5 @@
     <color name="colorDivider">#BDBDBD</color>
     <color name="white_color">#FFFFFF</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="control_background">#cc4285f4</color>
 </resources>
